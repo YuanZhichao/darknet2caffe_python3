@@ -2,9 +2,9 @@
 convert dartnet model to caffe (python3 version)
 # Requirements
   
-  Python3.7
+  Python3
 
-  Caffe
+  Caffe (compiled from source)
 
   Pytorch >= 0.4.0
 # Add Caffe Layers
@@ -39,13 +39,17 @@ message LayerParameter {
 ++}
 ```
 5.remake caffe.
+```
+make all -j4
+make pycaffe -j4
+```
 
 # Demo
   $ python cfg[in] weights[in] prototxt[out] caffemodel[out]
   
   Example
 ```
-python darknet2caffe.py cfg/yolov4.cfg weights/yolov4.weights prototxt/yolov4.prototxt caffemodel/yolov4.caffemodel
+python darknet2caffe.py yolov3-tiny.cfg yolov3-tiny.weights yolov3-tiny.prototxt yolov3-tiny.caffemodel
 ```
   or edit the bash file and
 ```
