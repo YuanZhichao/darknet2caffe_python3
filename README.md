@@ -40,6 +40,7 @@ message LayerParameter {
 ```
 5.remake caffe.
 ```
+make clean
 make all -j4
 make pycaffe -j4
 ```
