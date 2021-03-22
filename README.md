@@ -72,3 +72,6 @@ unknow layer type yolo
 save prototxt to yolov3-tiny.prototxt
 save caffemodel to yolov3-tiny.caffemodel
 ```
+
+# Reference
+  The repository is based on the python2 version from [ChenYingpeng/darknet2caffe](https://github.com/ChenYingpeng/darknet2caffe).
